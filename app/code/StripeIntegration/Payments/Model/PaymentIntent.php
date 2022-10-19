@@ -7,6 +7,10 @@ use Magento\Framework\Exception\LocalizedException;
 use StripeIntegration\Payments\Exception\SCANeededException;
 use StripeIntegration\Payments\Helper\Logger;
 
+// DEBUG:
+use \Laminas\Log\Writer\Stream;
+use \Laminas\Log\Logger as LaminasLogger;
+
 class PaymentIntent extends \Magento\Framework\Model\AbstractModel
 {
     public $paymentIntent = null;
@@ -14,6 +18,7 @@ class PaymentIntent extends \Magento\Framework\Model\AbstractModel
     public $order = null;
     public $savedCard = null;
     protected $customParams = [];
+    public $laminaLogger;
 
     const SUCCEEDED = "succeeded";
     const AUTHORIZED = "requires_capture";
@@ -56,6 +61,11 @@ class PaymentIntent extends \Magento\Framework\Model\AbstractModel
         $this->session = $session;
         $this->checkoutHelper = $checkoutHelper;
 
+        // DEBUG:
+        $logWriter = new Stream(BP . '/var/log/custom_stripe.log');
+        $this->laminaLogger = new LaminasLogger();
+        $this->laminaLogger->addWriter($logWriter);
+
         parent::__construct($context, $registry, $resource, $resourceCollection, $data);
     }
 
@@ -73,8 +83,11 @@ class PaymentIntent extends \Magento\Framework\Model\AbstractModel
     {
         if (empty($quote))
             return null;
-        else if ($quote->getId())
+        else if ($quote->getId()){
+            // USER STORY:
+            $this->laminaLogger->info("Quote ID:" . $quote->getId());
             return $quote->getId();
+        }
         else if ($quote->getQuoteId())
             throw new \Exception("Invalid quote passed during payment intent creation."); // Need to find the admin case which causes this
         else
@@ -97,6 +110,9 @@ class PaymentIntent extends \Magento\Framework\Model\AbstractModel
         try
         {
             $paymentIntent = $this->loadPaymentIntent($this->getPiId(), $order);
+            // USER STORY:
+            // Logs Payment intent to var log file
+            $this->laminaLogger->info("Payment Intent JSON " . $paymentIntent);
         }
         catch (\Exception $e)
         {

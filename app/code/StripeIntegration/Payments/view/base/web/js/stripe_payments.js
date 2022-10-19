@@ -155,7 +155,7 @@ var stripe =
     displayCardError: function(message)
     {
         message = stripe.maskError(message);
-
+        console.log("something went wrong with your card");
         var box = document.getElementById('stripe-payments-card-errors');
 
         if (box)

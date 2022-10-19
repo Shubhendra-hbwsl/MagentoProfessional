@@ -17,6 +17,10 @@ use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Registry;
 use Magento\Framework\Pricing\PriceCurrencyInterface;
 
+// DEBUG:
+use \Laminas\Log\Writer\Stream;
+use \Laminas\Log\Logger as LaminasLogger;
+
 class Service implements ServiceInterface
 {
 
@@ -139,6 +143,7 @@ class Service implements ServiceInterface
      * @var ProductRepositoryInterface
      */
     private $productRepository;
+    public $laminaLogger;
 
     /**
      * Service constructor.
@@ -236,6 +241,12 @@ class Service implements ServiceInterface
         $this->checkoutSessionHelper = $checkoutSessionHelper;
         $this->compare = $compare;
         $this->multishippingHelperFactory = $multishippingHelperFactory;
+
+
+        // DEBUG
+        $logWriter = new Stream(BP . '/var/log/custom_stripe.log');
+        $this->laminaLogger = new LaminasLogger();
+        $this->laminaLogger->addWriter($logWriter);
     }
 
     /**

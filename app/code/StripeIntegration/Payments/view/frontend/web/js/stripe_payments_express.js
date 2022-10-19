@@ -153,7 +153,6 @@ define(
                         location: location
                     },
                     self = this;
-
                 return storage.post(
                     serviceUrl,
                     JSON.stringify(payload),
@@ -398,7 +397,17 @@ define(
 
             initCheckoutWidget: function (paymentRequestButton, paymentRequest, prButton, onClick)
             {
+                console.log("Loading google pay button");
+                console.log(JSON.stringify(paymentRequest));
+                // ######################################
+                // USER STORY
+                // can't write this paymentRequest object to local system file root, because frontend doesn't have access to the 
+                // nodejs local filesystem 'fs' module.
+
+                // ####################################
+
                 prButton.on('click', onClick);
+
                 paymentRequest.on('shippingaddresschange', this.onShippingAddressChange.bind(this));
                 paymentRequest.on('shippingoptionchange', this.onShippingOptionChange.bind(this));
                 paymentRequest.on('paymentmethod', this.onPaymentMethod.bind(this, paymentRequestButton, 'checkout'));

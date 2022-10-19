@@ -1,0 +1,1520 @@
+{
+    "_callbacks": {},
+    "_usedByButtonElement": true,
+    "_showCalledByButtonElement": false,
+    "_isShowing": false,
+    "_backingLibraries": {
+        "APPLE_PAY": null,
+        "GOOGLE_PAY": {
+            "_mids": {
+                "guid": "NA",
+                "muid": "d31a375f-a85b-49d5-920a-db336d2d177981093f",
+                "sid": "9d4dccdd-20ae-4c91-b7ae-13ac765f6019c6e123"
+            },
+            "_frame": null,
+            "_controller": {
+                "action": {},
+                "_id": "__privateStripeController4111",
+                "_stripeJsId": "cf26a2ad-6337-4ca1-ac94-e37b8d03c879",
+                "_apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+                "_listenerRegistry": {},
+                "_betas": [],
+                "_controllerFrame": {
+                    "_callbacks": {
+                        "load": [
+                            {}
+                        ],
+                        "title": [
+                            {}
+                        ]
+                    },
+                    "action": {},
+                    "type": "CONTROLLER",
+                    "loaded": true,
+                    "_controllerId": "__privateStripeController4111",
+                    "_persistentMessages": [
+                        {
+                            "message": {
+                                "action": "stripe-user-createframe",
+                                "payload": {
+                                    "newFrameId": "__privateStripeFrame4114",
+                                    "frameType": "PAYMENT_REQUEST_BROWSER"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-user-createframe",
+                                "payload": {
+                                    "newFrameId": "__privateStripeFrame4118",
+                                    "frameType": "PAYMENT_REQUEST_ELEMENT",
+                                    "groupId": "elements4115"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-unload",
+                                "payload": {
+                                    "unloadedFrameId": "__privateStripeFrame4118"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-load",
+                                "payload": {
+                                    "loadedFrameId": "__privateStripeFrame4114"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-load",
+                                "payload": {
+                                    "loadedFrameId": "__privateStripeFrame4118"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        }
+                    ],
+                    "_queuedMessages": [],
+                    "_requests": {},
+                    "_listenerRegistry": {},
+                    "id": "__privateStripeController4111",
+                    "_iframe": {},
+                    "autoload": false
+                },
+                "_stripeJsLoadTimestamp": {
+                    "timestampValue": 8163.5
+                },
+                "_createTimestamp": {
+                    "timestampValue": 8169.600000000559
+                },
+                "_loadCount": 1,
+                "_mountTimestamp": {
+                    "timestampValue": 8199.600000000559
+                },
+                "_frames": {
+                    "__privateStripeFrame4114": {
+                        "_callbacks": {
+                            "load": [
+                                {},
+                                {}
+                            ],
+                            "title": [
+                                {}
+                            ],
+                            "unload": [
+                                {}
+                            ],
+                            "destroy": [
+                                {}
+                            ],
+                            "pr-cancel": [
+                                {}
+                            ],
+                            "pr-close": [
+                                {}
+                            ],
+                            "pr-error": [
+                                {}
+                            ],
+                            "pr-callback": [
+                                {}
+                            ]
+                        },
+                        "action": {},
+                        "type": "PAYMENT_REQUEST_BROWSER",
+                        "loaded": true,
+                        "_controllerId": "__privateStripeController4111",
+                        "_persistentMessages": [],
+                        "_queuedMessages": [],
+                        "_requests": {
+                            "CHECK_CAN_MAKE_PAYMENT41112": {}
+                        },
+                        "_listenerRegistry": {},
+                        "id": "__privateStripeFrame4114",
+                        "_iframe": {},
+                        "autoload": false
+                    },
+                    "__privateStripeFrame4118": {
+                        "_callbacks": {
+                            "load": [
+                                {},
+                                {},
+                                {},
+                                {}
+                            ],
+                            "title": [
+                                {}
+                            ],
+                            "unload": [
+                                {}
+                            ],
+                            "destroy": [
+                                {}
+                            ],
+                            "link-token-change": [
+                                {}
+                            ],
+                            "update-outer-link-frame": [
+                                {}
+                            ],
+                            "outer-link-card-mount": [
+                                {}
+                            ],
+                            "outer-link-card-unmount": [
+                                {}
+                            ],
+                            "redirectfocus": [
+                                {}
+                            ],
+                            "focus": [
+                                {},
+                                {}
+                            ],
+                            "blur": [
+                                {},
+                                {}
+                            ],
+                            "submit": [
+                                {}
+                            ],
+                            "ready": [
+                                {}
+                            ],
+                            "escape": [
+                                {}
+                            ],
+                            "click": [
+                                {}
+                            ],
+                            "change": [
+                                {}
+                            ],
+                            "__privateIntegrationError": [
+                                {}
+                            ],
+                            "networkschange-start": [
+                                {}
+                            ],
+                            "dimensions": [
+                                {}
+                            ],
+                            "autofill": [
+                                {}
+                            ],
+                            "autofill-cleared": [
+                                {}
+                            ],
+                            "update-outer-style": [
+                                {}
+                            ]
+                        },
+                        "action": {},
+                        "type": "PAYMENT_REQUEST_ELEMENT",
+                        "loaded": true,
+                        "_controllerId": "__privateStripeController4111",
+                        "_persistentMessages": [],
+                        "_queuedMessages": [],
+                        "_requests": {},
+                        "_listenerRegistry": {},
+                        "id": "__privateStripeFrame4118",
+                        "_iframe": {}
+                    }
+                },
+                "_requests": {
+                    "fetchLocale4112": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "fetchLocale4113": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "fetchLocale4116": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "setupStoreForElementsGroup4117": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "resolveLocale4119": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "retrieveLinkConfig41110": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "checkForLinkClientSecret41111": {
+                        "_state": "resolved",
+                        "promise": {}
+                    }
+                }
+            },
+            "_authentication": {
+                "apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+                "accountId": null
+            },
+            "_origin": "https://app.proff.test",
+            "_backdrop": {
+                "domElement": {},
+                "_runOnHide": [],
+                "_lockScrolling": false,
+                "_lockFocus": true,
+                "_lockFocusOn": null,
+                "_listenerRegistry": {}
+            },
+            "_isCheckout": false
+        },
+        "BROWSER": {
+            "_authentication": {
+                "apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+                "accountId": null
+            },
+            "_controller": {
+                "action": {},
+                "_id": "__privateStripeController4111",
+                "_stripeJsId": "cf26a2ad-6337-4ca1-ac94-e37b8d03c879",
+                "_apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+                "_listenerRegistry": {},
+                "_betas": [],
+                "_controllerFrame": {
+                    "_callbacks": {
+                        "load": [
+                            {}
+                        ],
+                        "title": [
+                            {}
+                        ]
+                    },
+                    "action": {},
+                    "type": "CONTROLLER",
+                    "loaded": true,
+                    "_controllerId": "__privateStripeController4111",
+                    "_persistentMessages": [
+                        {
+                            "message": {
+                                "action": "stripe-user-createframe",
+                                "payload": {
+                                    "newFrameId": "__privateStripeFrame4114",
+                                    "frameType": "PAYMENT_REQUEST_BROWSER"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-user-createframe",
+                                "payload": {
+                                    "newFrameId": "__privateStripeFrame4118",
+                                    "frameType": "PAYMENT_REQUEST_ELEMENT",
+                                    "groupId": "elements4115"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-unload",
+                                "payload": {
+                                    "unloadedFrameId": "__privateStripeFrame4118"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-load",
+                                "payload": {
+                                    "loadedFrameId": "__privateStripeFrame4114"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-load",
+                                "payload": {
+                                    "loadedFrameId": "__privateStripeFrame4118"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        }
+                    ],
+                    "_queuedMessages": [],
+                    "_requests": {},
+                    "_listenerRegistry": {},
+                    "id": "__privateStripeController4111",
+                    "_iframe": {},
+                    "autoload": false
+                },
+                "_stripeJsLoadTimestamp": {
+                    "timestampValue": 8163.5
+                },
+                "_createTimestamp": {
+                    "timestampValue": 8169.600000000559
+                },
+                "_loadCount": 1,
+                "_mountTimestamp": {
+                    "timestampValue": 8199.600000000559
+                },
+                "_frames": {
+                    "__privateStripeFrame4114": {
+                        "_callbacks": {
+                            "load": [
+                                {},
+                                {}
+                            ],
+                            "title": [
+                                {}
+                            ],
+                            "unload": [
+                                {}
+                            ],
+                            "destroy": [
+                                {}
+                            ],
+                            "pr-cancel": [
+                                {}
+                            ],
+                            "pr-close": [
+                                {}
+                            ],
+                            "pr-error": [
+                                {}
+                            ],
+                            "pr-callback": [
+                                {}
+                            ]
+                        },
+                        "action": {},
+                        "type": "PAYMENT_REQUEST_BROWSER",
+                        "loaded": true,
+                        "_controllerId": "__privateStripeController4111",
+                        "_persistentMessages": [],
+                        "_queuedMessages": [],
+                        "_requests": {
+                            "CHECK_CAN_MAKE_PAYMENT41112": {}
+                        },
+                        "_listenerRegistry": {},
+                        "id": "__privateStripeFrame4114",
+                        "_iframe": {},
+                        "autoload": false
+                    },
+                    "__privateStripeFrame4118": {
+                        "_callbacks": {
+                            "load": [
+                                {},
+                                {},
+                                {},
+                                {}
+                            ],
+                            "title": [
+                                {}
+                            ],
+                            "unload": [
+                                {}
+                            ],
+                            "destroy": [
+                                {}
+                            ],
+                            "link-token-change": [
+                                {}
+                            ],
+                            "update-outer-link-frame": [
+                                {}
+                            ],
+                            "outer-link-card-mount": [
+                                {}
+                            ],
+                            "outer-link-card-unmount": [
+                                {}
+                            ],
+                            "redirectfocus": [
+                                {}
+                            ],
+                            "focus": [
+                                {},
+                                {}
+                            ],
+                            "blur": [
+                                {},
+                                {}
+                            ],
+                            "submit": [
+                                {}
+                            ],
+                            "ready": [
+                                {}
+                            ],
+                            "escape": [
+                                {}
+                            ],
+                            "click": [
+                                {}
+                            ],
+                            "change": [
+                                {}
+                            ],
+                            "__privateIntegrationError": [
+                                {}
+                            ],
+                            "networkschange-start": [
+                                {}
+                            ],
+                            "dimensions": [
+                                {}
+                            ],
+                            "autofill": [
+                                {}
+                            ],
+                            "autofill-cleared": [
+                                {}
+                            ],
+                            "update-outer-style": [
+                                {}
+                            ]
+                        },
+                        "action": {},
+                        "type": "PAYMENT_REQUEST_ELEMENT",
+                        "loaded": true,
+                        "_controllerId": "__privateStripeController4111",
+                        "_persistentMessages": [],
+                        "_queuedMessages": [],
+                        "_requests": {},
+                        "_listenerRegistry": {},
+                        "id": "__privateStripeFrame4118",
+                        "_iframe": {}
+                    }
+                },
+                "_requests": {
+                    "fetchLocale4112": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "fetchLocale4113": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "fetchLocale4116": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "setupStoreForElementsGroup4117": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "resolveLocale4119": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "retrieveLinkConfig41110": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "checkForLinkClientSecret41111": {
+                        "_state": "resolved",
+                        "promise": {}
+                    }
+                }
+            },
+            "_prFrame": {
+                "_callbacks": {
+                    "load": [
+                        {},
+                        {}
+                    ],
+                    "title": [
+                        {}
+                    ],
+                    "unload": [
+                        {}
+                    ],
+                    "destroy": [
+                        {}
+                    ],
+                    "pr-cancel": [
+                        {}
+                    ],
+                    "pr-close": [
+                        {}
+                    ],
+                    "pr-error": [
+                        {}
+                    ],
+                    "pr-callback": [
+                        {}
+                    ]
+                },
+                "action": {},
+                "type": "PAYMENT_REQUEST_BROWSER",
+                "loaded": true,
+                "_controllerId": "__privateStripeController4111",
+                "_persistentMessages": [],
+                "_queuedMessages": [],
+                "_requests": {
+                    "CHECK_CAN_MAKE_PAYMENT41112": {}
+                },
+                "_listenerRegistry": {},
+                "id": "__privateStripeFrame4114",
+                "_iframe": {},
+                "autoload": false
+            }
+        },
+        "LINK": {
+            "blockReopenOnShow": false,
+            "popup": null,
+            "isDuringSuccessCushion": false,
+            "controller": {
+                "action": {},
+                "_id": "__privateStripeController4111",
+                "_stripeJsId": "cf26a2ad-6337-4ca1-ac94-e37b8d03c879",
+                "_apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+                "_listenerRegistry": {},
+                "_betas": [],
+                "_controllerFrame": {
+                    "_callbacks": {
+                        "load": [
+                            {}
+                        ],
+                        "title": [
+                            {}
+                        ]
+                    },
+                    "action": {},
+                    "type": "CONTROLLER",
+                    "loaded": true,
+                    "_controllerId": "__privateStripeController4111",
+                    "_persistentMessages": [
+                        {
+                            "message": {
+                                "action": "stripe-user-createframe",
+                                "payload": {
+                                    "newFrameId": "__privateStripeFrame4114",
+                                    "frameType": "PAYMENT_REQUEST_BROWSER"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-user-createframe",
+                                "payload": {
+                                    "newFrameId": "__privateStripeFrame4118",
+                                    "frameType": "PAYMENT_REQUEST_ELEMENT",
+                                    "groupId": "elements4115"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-unload",
+                                "payload": {
+                                    "unloadedFrameId": "__privateStripeFrame4118"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-load",
+                                "payload": {
+                                    "loadedFrameId": "__privateStripeFrame4114"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        },
+                        {
+                            "message": {
+                                "action": "stripe-frame-load",
+                                "payload": {
+                                    "loadedFrameId": "__privateStripeFrame4118"
+                                }
+                            },
+                            "type": "outer",
+                            "frameId": "__privateStripeController4111",
+                            "controllerId": "__privateStripeController4111"
+                        }
+                    ],
+                    "_queuedMessages": [],
+                    "_requests": {},
+                    "_listenerRegistry": {},
+                    "id": "__privateStripeController4111",
+                    "_iframe": {},
+                    "autoload": false
+                },
+                "_stripeJsLoadTimestamp": {
+                    "timestampValue": 8163.5
+                },
+                "_createTimestamp": {
+                    "timestampValue": 8169.600000000559
+                },
+                "_loadCount": 1,
+                "_mountTimestamp": {
+                    "timestampValue": 8199.600000000559
+                },
+                "_frames": {
+                    "__privateStripeFrame4114": {
+                        "_callbacks": {
+                            "load": [
+                                {},
+                                {}
+                            ],
+                            "title": [
+                                {}
+                            ],
+                            "unload": [
+                                {}
+                            ],
+                            "destroy": [
+                                {}
+                            ],
+                            "pr-cancel": [
+                                {}
+                            ],
+                            "pr-close": [
+                                {}
+                            ],
+                            "pr-error": [
+                                {}
+                            ],
+                            "pr-callback": [
+                                {}
+                            ]
+                        },
+                        "action": {},
+                        "type": "PAYMENT_REQUEST_BROWSER",
+                        "loaded": true,
+                        "_controllerId": "__privateStripeController4111",
+                        "_persistentMessages": [],
+                        "_queuedMessages": [],
+                        "_requests": {
+                            "CHECK_CAN_MAKE_PAYMENT41112": {}
+                        },
+                        "_listenerRegistry": {},
+                        "id": "__privateStripeFrame4114",
+                        "_iframe": {},
+                        "autoload": false
+                    },
+                    "__privateStripeFrame4118": {
+                        "_callbacks": {
+                            "load": [
+                                {},
+                                {},
+                                {},
+                                {}
+                            ],
+                            "title": [
+                                {}
+                            ],
+                            "unload": [
+                                {}
+                            ],
+                            "destroy": [
+                                {}
+                            ],
+                            "link-token-change": [
+                                {}
+                            ],
+                            "update-outer-link-frame": [
+                                {}
+                            ],
+                            "outer-link-card-mount": [
+                                {}
+                            ],
+                            "outer-link-card-unmount": [
+                                {}
+                            ],
+                            "redirectfocus": [
+                                {}
+                            ],
+                            "focus": [
+                                {},
+                                {}
+                            ],
+                            "blur": [
+                                {},
+                                {}
+                            ],
+                            "submit": [
+                                {}
+                            ],
+                            "ready": [
+                                {}
+                            ],
+                            "escape": [
+                                {}
+                            ],
+                            "click": [
+                                {}
+                            ],
+                            "change": [
+                                {}
+                            ],
+                            "__privateIntegrationError": [
+                                {}
+                            ],
+                            "networkschange-start": [
+                                {}
+                            ],
+                            "dimensions": [
+                                {}
+                            ],
+                            "autofill": [
+                                {}
+                            ],
+                            "autofill-cleared": [
+                                {}
+                            ],
+                            "update-outer-style": [
+                                {}
+                            ]
+                        },
+                        "action": {},
+                        "type": "PAYMENT_REQUEST_ELEMENT",
+                        "loaded": true,
+                        "_controllerId": "__privateStripeController4111",
+                        "_persistentMessages": [],
+                        "_queuedMessages": [],
+                        "_requests": {},
+                        "_listenerRegistry": {},
+                        "id": "__privateStripeFrame4118",
+                        "_iframe": {}
+                    }
+                },
+                "_requests": {
+                    "fetchLocale4112": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "fetchLocale4113": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "fetchLocale4116": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "setupStoreForElementsGroup4117": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "resolveLocale4119": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "retrieveLinkConfig41110": {
+                        "_state": "resolved",
+                        "promise": {}
+                    },
+                    "checkForLinkClientSecret41111": {
+                        "_state": "resolved",
+                        "promise": {}
+                    }
+                }
+            },
+            "authentication": {
+                "apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+                "accountId": null
+            },
+            "paymentRequestOptions": {
+                "displayItems": [
+                    {
+                        "amount": 4500,
+                        "label": "Push It Messenger Bag",
+                        "pending": false
+                    },
+                    {
+                        "amount": 5900,
+                        "label": "Fusion Backpack",
+                        "pending": false
+                    },
+                    {
+                        "amount": 1000,
+                        "label": "Shipping"
+                    },
+                    {
+                        "amount": 858,
+                        "label": "Tax"
+                    }
+                ],
+                "total": {
+                    "amount": 12258,
+                    "label": "Shubhendra",
+                    "pending": false
+                },
+                "requestShipping": false,
+                "requestPayerName": true,
+                "requestPayerEmail": true,
+                "requestPayerPhone": true,
+                "currency": "usd",
+                "country": "US",
+                "__betas": []
+            }
+        }
+    },
+    "_activeBackingLibraryName": "BROWSER",
+    "_buttonTypeName": "GOOGLE_PAY",
+    "_activeBackingLibrary": {
+        "_authentication": {
+            "apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+            "accountId": null
+        },
+        "_controller": {
+            "action": {},
+            "_id": "__privateStripeController4111",
+            "_stripeJsId": "cf26a2ad-6337-4ca1-ac94-e37b8d03c879",
+            "_apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+            "_listenerRegistry": {},
+            "_betas": [],
+            "_controllerFrame": {
+                "_callbacks": {
+                    "load": [
+                        {}
+                    ],
+                    "title": [
+                        {}
+                    ]
+                },
+                "action": {},
+                "type": "CONTROLLER",
+                "loaded": true,
+                "_controllerId": "__privateStripeController4111",
+                "_persistentMessages": [
+                    {
+                        "message": {
+                            "action": "stripe-user-createframe",
+                            "payload": {
+                                "newFrameId": "__privateStripeFrame4114",
+                                "frameType": "PAYMENT_REQUEST_BROWSER"
+                            }
+                        },
+                        "type": "outer",
+                        "frameId": "__privateStripeController4111",
+                        "controllerId": "__privateStripeController4111"
+                    },
+                    {
+                        "message": {
+                            "action": "stripe-user-createframe",
+                            "payload": {
+                                "newFrameId": "__privateStripeFrame4118",
+                                "frameType": "PAYMENT_REQUEST_ELEMENT",
+                                "groupId": "elements4115"
+                            }
+                        },
+                        "type": "outer",
+                        "frameId": "__privateStripeController4111",
+                        "controllerId": "__privateStripeController4111"
+                    },
+                    {
+                        "message": {
+                            "action": "stripe-frame-unload",
+                            "payload": {
+                                "unloadedFrameId": "__privateStripeFrame4118"
+                            }
+                        },
+                        "type": "outer",
+                        "frameId": "__privateStripeController4111",
+                        "controllerId": "__privateStripeController4111"
+                    },
+                    {
+                        "message": {
+                            "action": "stripe-frame-load",
+                            "payload": {
+                                "loadedFrameId": "__privateStripeFrame4114"
+                            }
+                        },
+                        "type": "outer",
+                        "frameId": "__privateStripeController4111",
+                        "controllerId": "__privateStripeController4111"
+                    },
+                    {
+                        "message": {
+                            "action": "stripe-frame-load",
+                            "payload": {
+                                "loadedFrameId": "__privateStripeFrame4118"
+                            }
+                        },
+                        "type": "outer",
+                        "frameId": "__privateStripeController4111",
+                        "controllerId": "__privateStripeController4111"
+                    }
+                ],
+                "_queuedMessages": [],
+                "_requests": {},
+                "_listenerRegistry": {},
+                "id": "__privateStripeController4111",
+                "_iframe": {},
+                "autoload": false
+            },
+            "_stripeJsLoadTimestamp": {
+                "timestampValue": 8163.5
+            },
+            "_createTimestamp": {
+                "timestampValue": 8169.600000000559
+            },
+            "_loadCount": 1,
+            "_mountTimestamp": {
+                "timestampValue": 8199.600000000559
+            },
+            "_frames": {
+                "__privateStripeFrame4114": {
+                    "_callbacks": {
+                        "load": [
+                            {},
+                            {}
+                        ],
+                        "title": [
+                            {}
+                        ],
+                        "unload": [
+                            {}
+                        ],
+                        "destroy": [
+                            {}
+                        ],
+                        "pr-cancel": [
+                            {}
+                        ],
+                        "pr-close": [
+                            {}
+                        ],
+                        "pr-error": [
+                            {}
+                        ],
+                        "pr-callback": [
+                            {}
+                        ]
+                    },
+                    "action": {},
+                    "type": "PAYMENT_REQUEST_BROWSER",
+                    "loaded": true,
+                    "_controllerId": "__privateStripeController4111",
+                    "_persistentMessages": [],
+                    "_queuedMessages": [],
+                    "_requests": {
+                        "CHECK_CAN_MAKE_PAYMENT41112": {}
+                    },
+                    "_listenerRegistry": {},
+                    "id": "__privateStripeFrame4114",
+                    "_iframe": {},
+                    "autoload": false
+                },
+                "__privateStripeFrame4118": {
+                    "_callbacks": {
+                        "load": [
+                            {},
+                            {},
+                            {},
+                            {}
+                        ],
+                        "title": [
+                            {}
+                        ],
+                        "unload": [
+                            {}
+                        ],
+                        "destroy": [
+                            {}
+                        ],
+                        "link-token-change": [
+                            {}
+                        ],
+                        "update-outer-link-frame": [
+                            {}
+                        ],
+                        "outer-link-card-mount": [
+                            {}
+                        ],
+                        "outer-link-card-unmount": [
+                            {}
+                        ],
+                        "redirectfocus": [
+                            {}
+                        ],
+                        "focus": [
+                            {},
+                            {}
+                        ],
+                        "blur": [
+                            {},
+                            {}
+                        ],
+                        "submit": [
+                            {}
+                        ],
+                        "ready": [
+                            {}
+                        ],
+                        "escape": [
+                            {}
+                        ],
+                        "click": [
+                            {}
+                        ],
+                        "change": [
+                            {}
+                        ],
+                        "__privateIntegrationError": [
+                            {}
+                        ],
+                        "networkschange-start": [
+                            {}
+                        ],
+                        "dimensions": [
+                            {}
+                        ],
+                        "autofill": [
+                            {}
+                        ],
+                        "autofill-cleared": [
+                            {}
+                        ],
+                        "update-outer-style": [
+                            {}
+                        ]
+                    },
+                    "action": {},
+                    "type": "PAYMENT_REQUEST_ELEMENT",
+                    "loaded": true,
+                    "_controllerId": "__privateStripeController4111",
+                    "_persistentMessages": [],
+                    "_queuedMessages": [],
+                    "_requests": {},
+                    "_listenerRegistry": {},
+                    "id": "__privateStripeFrame4118",
+                    "_iframe": {}
+                }
+            },
+            "_requests": {
+                "fetchLocale4112": {
+                    "_state": "resolved",
+                    "promise": {}
+                },
+                "fetchLocale4113": {
+                    "_state": "resolved",
+                    "promise": {}
+                },
+                "fetchLocale4116": {
+                    "_state": "resolved",
+                    "promise": {}
+                },
+                "setupStoreForElementsGroup4117": {
+                    "_state": "resolved",
+                    "promise": {}
+                },
+                "resolveLocale4119": {
+                    "_state": "resolved",
+                    "promise": {}
+                },
+                "retrieveLinkConfig41110": {
+                    "_state": "resolved",
+                    "promise": {}
+                },
+                "checkForLinkClientSecret41111": {
+                    "_state": "resolved",
+                    "promise": {}
+                }
+            }
+        },
+        "_prFrame": {
+            "_callbacks": {
+                "load": [
+                    {},
+                    {}
+                ],
+                "title": [
+                    {}
+                ],
+                "unload": [
+                    {}
+                ],
+                "destroy": [
+                    {}
+                ],
+                "pr-cancel": [
+                    {}
+                ],
+                "pr-close": [
+                    {}
+                ],
+                "pr-error": [
+                    {}
+                ],
+                "pr-callback": [
+                    {}
+                ]
+            },
+            "action": {},
+            "type": "PAYMENT_REQUEST_BROWSER",
+            "loaded": true,
+            "_controllerId": "__privateStripeController4111",
+            "_persistentMessages": [],
+            "_queuedMessages": [],
+            "_requests": {
+                "CHECK_CAN_MAKE_PAYMENT41112": {}
+            },
+            "_listenerRegistry": {},
+            "id": "__privateStripeFrame4114",
+            "_iframe": {},
+            "autoload": false
+        }
+    },
+    "_canMakePaymentAvailability": {
+        "APPLE_PAY": null,
+        "GOOGLE_PAY": false,
+        "BROWSER": true,
+        "LINK": false
+    },
+    "_canMakePaymentResolved": true,
+    "_controller": {
+        "action": {},
+        "_id": "__privateStripeController4111",
+        "_stripeJsId": "cf26a2ad-6337-4ca1-ac94-e37b8d03c879",
+        "_apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+        "_listenerRegistry": {},
+        "_betas": [],
+        "_controllerFrame": {
+            "_callbacks": {
+                "load": [
+                    {}
+                ],
+                "title": [
+                    {}
+                ]
+            },
+            "action": {},
+            "type": "CONTROLLER",
+            "loaded": true,
+            "_controllerId": "__privateStripeController4111",
+            "_persistentMessages": [
+                {
+                    "message": {
+                        "action": "stripe-user-createframe",
+                        "payload": {
+                            "newFrameId": "__privateStripeFrame4114",
+                            "frameType": "PAYMENT_REQUEST_BROWSER"
+                        }
+                    },
+                    "type": "outer",
+                    "frameId": "__privateStripeController4111",
+                    "controllerId": "__privateStripeController4111"
+                },
+                {
+                    "message": {
+                        "action": "stripe-user-createframe",
+                        "payload": {
+                            "newFrameId": "__privateStripeFrame4118",
+                            "frameType": "PAYMENT_REQUEST_ELEMENT",
+                            "groupId": "elements4115"
+                        }
+                    },
+                    "type": "outer",
+                    "frameId": "__privateStripeController4111",
+                    "controllerId": "__privateStripeController4111"
+                },
+                {
+                    "message": {
+                        "action": "stripe-frame-unload",
+                        "payload": {
+                            "unloadedFrameId": "__privateStripeFrame4118"
+                        }
+                    },
+                    "type": "outer",
+                    "frameId": "__privateStripeController4111",
+                    "controllerId": "__privateStripeController4111"
+                },
+                {
+                    "message": {
+                        "action": "stripe-frame-load",
+                        "payload": {
+                            "loadedFrameId": "__privateStripeFrame4114"
+                        }
+                    },
+                    "type": "outer",
+                    "frameId": "__privateStripeController4111",
+                    "controllerId": "__privateStripeController4111"
+                },
+                {
+                    "message": {
+                        "action": "stripe-frame-load",
+                        "payload": {
+                            "loadedFrameId": "__privateStripeFrame4118"
+                        }
+                    },
+                    "type": "outer",
+                    "frameId": "__privateStripeController4111",
+                    "controllerId": "__privateStripeController4111"
+                }
+            ],
+            "_queuedMessages": [],
+            "_requests": {},
+            "_listenerRegistry": {},
+            "id": "__privateStripeController4111",
+            "_iframe": {},
+            "autoload": false
+        },
+        "_stripeJsLoadTimestamp": {
+            "timestampValue": 8163.5
+        },
+        "_createTimestamp": {
+            "timestampValue": 8169.600000000559
+        },
+        "_loadCount": 1,
+        "_mountTimestamp": {
+            "timestampValue": 8199.600000000559
+        },
+        "_frames": {
+            "__privateStripeFrame4114": {
+                "_callbacks": {
+                    "load": [
+                        {},
+                        {}
+                    ],
+                    "title": [
+                        {}
+                    ],
+                    "unload": [
+                        {}
+                    ],
+                    "destroy": [
+                        {}
+                    ],
+                    "pr-cancel": [
+                        {}
+                    ],
+                    "pr-close": [
+                        {}
+                    ],
+                    "pr-error": [
+                        {}
+                    ],
+                    "pr-callback": [
+                        {}
+                    ]
+                },
+                "action": {},
+                "type": "PAYMENT_REQUEST_BROWSER",
+                "loaded": true,
+                "_controllerId": "__privateStripeController4111",
+                "_persistentMessages": [],
+                "_queuedMessages": [],
+                "_requests": {
+                    "CHECK_CAN_MAKE_PAYMENT41112": {}
+                },
+                "_listenerRegistry": {},
+                "id": "__privateStripeFrame4114",
+                "_iframe": {},
+                "autoload": false
+            },
+            "__privateStripeFrame4118": {
+                "_callbacks": {
+                    "load": [
+                        {},
+                        {},
+                        {},
+                        {}
+                    ],
+                    "title": [
+                        {}
+                    ],
+                    "unload": [
+                        {}
+                    ],
+                    "destroy": [
+                        {}
+                    ],
+                    "link-token-change": [
+                        {}
+                    ],
+                    "update-outer-link-frame": [
+                        {}
+                    ],
+                    "outer-link-card-mount": [
+                        {}
+                    ],
+                    "outer-link-card-unmount": [
+                        {}
+                    ],
+                    "redirectfocus": [
+                        {}
+                    ],
+                    "focus": [
+                        {},
+                        {}
+                    ],
+                    "blur": [
+                        {},
+                        {}
+                    ],
+                    "submit": [
+                        {}
+                    ],
+                    "ready": [
+                        {}
+                    ],
+                    "escape": [
+                        {}
+                    ],
+                    "click": [
+                        {}
+                    ],
+                    "change": [
+                        {}
+                    ],
+                    "__privateIntegrationError": [
+                        {}
+                    ],
+                    "networkschange-start": [
+                        {}
+                    ],
+                    "dimensions": [
+                        {}
+                    ],
+                    "autofill": [
+                        {}
+                    ],
+                    "autofill-cleared": [
+                        {}
+                    ],
+                    "update-outer-style": [
+                        {}
+                    ]
+                },
+                "action": {},
+                "type": "PAYMENT_REQUEST_ELEMENT",
+                "loaded": true,
+                "_controllerId": "__privateStripeController4111",
+                "_persistentMessages": [],
+                "_queuedMessages": [],
+                "_requests": {},
+                "_listenerRegistry": {},
+                "id": "__privateStripeFrame4118",
+                "_iframe": {}
+            }
+        },
+        "_requests": {
+            "fetchLocale4112": {
+                "_state": "resolved",
+                "promise": {}
+            },
+            "fetchLocale4113": {
+                "_state": "resolved",
+                "promise": {}
+            },
+            "fetchLocale4116": {
+                "_state": "resolved",
+                "promise": {}
+            },
+            "setupStoreForElementsGroup4117": {
+                "_state": "resolved",
+                "promise": {}
+            },
+            "resolveLocale4119": {
+                "_state": "resolved",
+                "promise": {}
+            },
+            "retrieveLinkConfig41110": {
+                "_state": "resolved",
+                "promise": {}
+            },
+            "checkForLinkClientSecret41111": {
+                "_state": "resolved",
+                "promise": {}
+            }
+        }
+    },
+    "_authentication": {
+        "apiKey": "pk_test_51LjkqnSEWxK6CjZHfD3YlhUl4Fz9PSi4KukP8TPuOgoJmfFsTEws5qo052309sFX9Klbbm7TzJMheS9utRwYvFtW00zm6s6InV",
+        "accountId": null
+    },
+    "_mids": {
+        "guid": "NA",
+        "muid": "d31a375f-a85b-49d5-920a-db336d2d177981093f",
+        "sid": "9d4dccdd-20ae-4c91-b7ae-13ac765f6019c6e123"
+    },
+    "_listenerRegistry": {},
+    "_queryStrategy": [
+        "LINK",
+        "GOOGLE_PAY",
+        "BROWSER"
+    ],
+    "_initialOptions": {
+        "displayItems": [
+            {
+                "amount": 4500,
+                "label": "Push It Messenger Bag",
+                "pending": false
+            },
+            {
+                "amount": 5900,
+                "label": "Fusion Backpack",
+                "pending": false
+            },
+            {
+                "amount": 1000,
+                "label": "Shipping"
+            },
+            {
+                "amount": 858,
+                "label": "Tax"
+            }
+        ],
+        "total": {
+            "amount": 12258,
+            "label": "Shubhendra",
+            "pending": false
+        },
+        "requestShipping": false,
+        "requestPayerName": true,
+        "requestPayerEmail": true,
+        "requestPayerPhone": true,
+        "currency": "usd",
+        "country": "US",
+        "__betas": []
+    },
+    "_reportOnlyCurrency": "usd",
+    "_reportOnlyTotal": {
+        "amount": 12258,
+        "label": "Shubhendra",
+        "pending": false
+    },
+    "_locale": "en"
+}
