@@ -1,0 +1,37 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+
+-   repo: https://github.com/comkieffer/pre-commit-xmllint.git
+    rev: 1.0.0
+    hooks:
+      - id: xmllint
+
+-   repo: https://github.com/netz98/pre-commit-php
+    rev: 1.3.0
+    hooks:
+    -   id: php-cs
+        files: /app/
+        args:
+          - "--standard=Magento2"
+          - "--extensions=php,phtml"
+          - "--error-severity=10"
+          - "--ignore-annotations"
+    -   id: php-lint-all
+    -   id: php-unit
+        args:
+            - "-c"
+            - "tests/unit"
+            - "--debug"
+
+-   repo: https://github.com/avilaton/add-msg-issue-prefix-hook
+    rev: v0.0.5
+    hooks:
+    -   id: add-msg-issue-prefix
