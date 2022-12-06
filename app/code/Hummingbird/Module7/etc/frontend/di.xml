@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Plugin to change the layout of product detail page to 3 column layout -->
+    <type name="Magento\Catalog\Controller\Product">
+        <plugin name="product-view-change-layout-controller-plugin" 
+        type="Hummingbird\Module7\Controller\ProductLayout\ProductLayout" sortOrder="5" disabled="false"/>
+    </type>
+
+</config>

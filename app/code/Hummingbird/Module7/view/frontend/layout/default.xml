@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.main.title">
+        <!-- pastes the custom message after the main title of the page -->
+            <block class="Hummingbird\Module7\Block\AllPageBlock" name="module7.allpage.msg" template="Hummingbird_Module7::AllPageMessage.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
