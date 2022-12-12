@@ -22,7 +22,7 @@ if [ "$ENVIRONMENT" == "production" ]; then
     $COMPOSER install --no-dev
 else
     echo "Running composer install"
-    $COMPOSER update && echo "Complete composer update"
+    #$COMPOSER update && echo "Complete composer update"
 fi
 
 echo "Magento deploy"
@@ -43,16 +43,13 @@ $PHP $MAGENTO cache:enable &&
      $PHP $MAGENTO config:set design/head/default_robots 'NOINDEX,NOFOLLOW' &&
      $PHP $MAGENTO config:set google/analytics/active 1
  else
-# # There seems to some problem with below code block, when uncommented it throws syntax error, fi unexpected token and no, fi is used correctly, this shows same error when below code block is pasted in 
-# # composer if block
-#
      echo "Development deploy"
      $PHP $MAGENTO deploy:mode:set developer &&
      $PHP $MAGENTO config:set dev/js/move_script_to_bottom 0 &&
      $PHP $MAGENTO config:set dev/js/enable_js_bundling 0 &&
      $PHP $MAGENTO config:set dev/js/merge_files 0 &&
      $PHP $MAGENTO config:set dev/js/minify_files 0 &&
-     $PHP $MAGENTO config:set google/analytics/active 0 &&
+     $PHP $MAGENTO config:set google/analytics/active 0
      # $PHP $MAGENTO config:set design/head/default_robots 'NOINDEX,NOFOLLOW'
  fi
 
