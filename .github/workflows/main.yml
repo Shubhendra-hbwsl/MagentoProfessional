@@ -29,6 +29,5 @@ jobs:
           script: |
             cd /home/magetest/webapps/magetest
             git status
-            git pull origin production
-            echo "After pulling the code"
-            git status
+            echo "Running deployment script on the server"
+            sh deployment.sh
