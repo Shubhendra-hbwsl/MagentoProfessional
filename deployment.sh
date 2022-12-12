@@ -32,27 +32,6 @@ rm -rf var/cache/* var/view_preprocessed/* var/page_cache/* pub/static/* generat
 $PHP $MAGENTO setup:upgrade &&
 $PHP $MAGENTO cache:enable &&
 
-
- if [ "$ENVIRONMENT" == "production" ]; then
-     echo "Production deploy"
-     $PHP $MAGENTO deploy:mode:set production --skip-compilation &&
-     $PHP $MAGENTO config:set dev/js/move_script_to_bottom 1 &&
-     $PHP $MAGENTO config:set dev/js/enable_js_bundling 0 &&
-     $PHP $MAGENTO config:set dev/js/merge_files 1 &&
-     $PHP $MAGENTO config:set dev/js/minify_files 0 &&
-     $PHP $MAGENTO config:set design/head/default_robots 'NOINDEX,NOFOLLOW' &&
-     $PHP $MAGENTO config:set google/analytics/active 1
- else
-     echo "Development deploy"
-     $PHP $MAGENTO deploy:mode:set developer &&
-     $PHP $MAGENTO config:set dev/js/move_script_to_bottom 0 &&
-     $PHP $MAGENTO config:set dev/js/enable_js_bundling 0 &&
-     $PHP $MAGENTO config:set dev/js/merge_files 0 &&
-     $PHP $MAGENTO config:set dev/js/minify_files 0 &&
-     $PHP $MAGENTO config:set google/analytics/active 0
-     # $PHP $MAGENTO config:set design/head/default_robots 'NOINDEX,NOFOLLOW'
- fi
-
 $PHP $MAGENTO setup:di:compile &&
 $PHP $MAGENTO setup:static-content:deploy $LANGUAGES -f &&
 $PHP $MAGENTO indexer:reindex &&
